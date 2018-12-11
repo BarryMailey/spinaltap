@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Spinal Tab</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|New+Rocker" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body id="topOfPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#topOfPage">
+                    <img src="images\BandLogo.png" class="logo" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#topOfPage">HOME</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#photo">PHOTOS</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                    <li><a href="#music">MUSIC</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 'FRONT PAGE' SECTION -->
+    <div class="container-fluid callout-container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <section>
+                    <h1 class="legend">Rock & Roll Legends</h1>
+                    <hr class='block-divider block-divider--pink'>
+                    <p style="text-align:center;">
+                        <a href="https://www.facebook.com/ThisIsSpinalTapMovie"><img src="images\iconFb.png" alt="Facebook" class="smImageLrg" /></a>
+                        <a href="https://twitter.com/SpinalTapMinute"><img src="images\iconTwitter.png" alt="Twitter" class="smImageLrg" /></a>
+                        <a href="https://www.youtube.com/channel/UCQstcEN4u1eSliMXPPDX2IA"><img src="/images/IconYouTube.png" alt="YouTube" class="smImageLrg" /></a>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- END OF 'FRONT PAGE' SECTION -->
+
+
+    <!-- BAND NEWS SECTION -->
+    <section id="news" class="container text-center">
+        <h3>BAND NEWS</h3>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <!-- END OF BAND NEWS SECTION -->
+
+
+    <!-- PHOTO SECTION -->
+    <section id="photo" class="container text-center">
+        <h3>PHOTO GALLERY</h3>
+        <!-- Photo Grid -->
+        <div class="row rowGallery">
+            <div class="column columnGallery">
+                <img src="images/band1.jpg" alt="Rock and roll gods" class="imageGallery img-rounded">
+                <img src="images/band2.jpg" alt="Bass guitarist" class="imageGallery img-rounded">
+                <img src="images/band3.jpg" alt="Volumn turned to 11" class="imageGallery img-rounded">
+                <img src="images/band4.jpg" alt="Rock and roll" class="imageGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/band5.jpg" alt="In the dressing room" class="imageGallery img-rounded">
+                <img src="images/band6.jpg" alt="Dodgy wig" class="imageGallery img-rounded">
+                <img src="images/band7.jpg" alt="Hey ho lets go" class="imageGallery img-rounded">
+                <img src="images/band8.jpg" alt="Band and manager" class="imageGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/band9.jpg" alt="A quiet moment" class="imageGallery img-rounded">
+                <img src="images/band10.jpg" alt="Top of the Pops" class="imageGallery img-rounded">
+                <img src="images/band11.jpg" alt="Stonehenge Festival" class="imageGallery img-rounded">
+                <img src="images/band12.jpg" alt="Gold record" class="imageGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/band13.jpg" alt="I sing the songs" class="imageGallery img-rounded">
+                <img src="images/band14.jpg" alt="The three amigos" class="imageGallery img-rounded">
+                <img src="images/band15.jpg" alt="Spinal Tap the video game" class="imageGallery img-rounded">
+                <img src="images/band16.jpg" alt="Ignore those other two" class="imageGallery img-rounded">
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body mb-0 p-0">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <img src="" id="modelImage" class="img-responsive img-rounded" />
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <h3 class="mr-4" id="modelImageCaption"></h3>
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF PHOTO SECTION -->
+
+
+    <!-- VIDEO SECTION -->
+    <section id="video" class="container text-center">
+        <h3>VIDEO</h3>
+        <div class="row rowGallery">
+            <div class="column columnGallery">
+                <img src="images/videoImage1.JPG" id="uMSV4OteqBE" data-toggle="tooltip" title="PLAY: Amp goes to ELEVEN" alt="Amp goes to ELEVEN" class="videoGallery img-rounded">
+                <img src="images/videoImage2.JPG" id="sK8wl-jr9rA" alt="Live at Glastonbury" data-toggle="tooltip" title="PLAY: Live at Glastonbury" class="videoGallery img-rounded">
+                <img src="images/videoImage3.JPG" id="Q2Xgs40w678" alt="Bitch School" data-toggle="tooltip" title="PLAY: Bitch School" class="videoGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/videoImage4.JPG" id="7qDgCmzh5ao" alt="Big Bottom" data-toggle="tooltip" title="PLAY: Big Bottom" class="videoGallery img-rounded">
+                <img src="images/videoImage5.JPG" id="KneOdEDwDEc" alt="Christmas With The Devil" data-toggle="tooltip" title="PLAY: Christmas With The Devil" class="videoGallery img-rounded">
+                <img src="images/videoImage6.JPG" id="Pyh1Va_mYWI" alt="Stonehenge" data-toggle="tooltip" title="PLAY: Stonehenge" class="videoGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/videoImage7.JPG" id="QrJlyapt6OY" alt="Listen to the Flower People" data-toggle="tooltip" title="PLAY: Listen to the Flower People" class="videoGallery img-rounded">
+                <img src="images/videoImage8.JPG" id="nAruBWa7LGk" alt="Visiting Elvis' Grave" data-toggle="tooltip" title="PLAY: Visiting Elvis' Grave" class="videoGallery img-rounded">
+                <img src="images/videoImage9.JPG" id="waFM6KvSz70" alt="Back from the dead" data-toggle="tooltip" title="PLAY: Back from the dead" class="videoGallery img-rounded">
+            </div>
+            <div class="column columnGallery">
+                <img src="images/videoImage10.JPG" id="vEXn7KB8TQs" alt="Band discussion" data-toggle="tooltip" title="PLAY: band discussion" class="videoGallery img-rounded">
+                <img src="images/videoImage11.JPG" id="eTDEKk3bB04" alt="Composing on piano" data-toggle="tooltip" title="PLAY: Composing on piano" class="videoGallery img-rounded">
+                <img src="images/videoImage12.JPG" id="zABnkDJ2yHw" alt="Folk music" data-toggle="tooltip" title="PLAY: Folk music" class="videoGallery img-rounded">
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body mb-0 p-0">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" id="modalVideoPlayer" src="" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <h3 class="mr-4" id="modelVideoCaption"></h3>
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- END OF VIDEO SECTION -->
+
+
+    <!-- MUSIC SECTION -->
+    <section id="music" class="container text-center">
+        <h3>MUSIC</h3>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <!-- END OF MUSIC SECTION -->
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container text-center">
+        <h3>CONTACT</h3>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <!-- END OF CONTACT SECTION -->
+
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <p>
+            <a class="up-arrow" href="#topOfPage" data-toggle="tooltip" title="TO TOP">
+                Back to top
+            </a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com/ThisIsSpinalTapMovie"><img src="images\iconFb.png" alt="Facebook" class="smImage" /></a>
+            <a href="https://twitter.com/SpinalTapMinute"><img src="images\iconTwitter.png" alt="Twitter" class="smImage" /></a>
+            <a href="https://www.youtube.com/channel/UCQstcEN4u1eSliMXPPDX2IA"><img src="images\IconYouTube.png" alt="YouTube" class="smImage" /></a>
+        </p>
+    </footer>
+    <!-- END OF FOOTER -->
+
+
+    <script>
+        $(document).ready(function () {
+            ScrollSmoothly();
+            $('[data-toggle="tooltip"]').tooltip();  
+        })
+
+        //This JS function uses jquery animate function to move to
+        //each section smoothly rather than with a quick jump
+        function ScrollSmoothly() {
+            $(".navbar a, footer a[href='#topOfPage']").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({ scrollTop: $(hash).offset().top }, 500, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        }
+
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+
+        $(".imageGallery").click(function () {
+            $('#modelImage').attr('src', this.src);
+            $("#modelImageCaption").html(this.alt);
+            $("#myModal").modal('show');
+        });
+
+        $(".videoGallery").click(function () {
+            $("#modalVideoPlayer").attr("src", "https://www.youtube.com/embed/" + this.id);
+            $("#modelVideoCaption").html(this.alt);
+            $("#videoModal").modal('show');
+        });
+
+
+        $('#videoModal').on('hidden.bs.modal', function () {
+            $("#modalVideoPlayer").attr("src", $("#modalVideoPlayer").attr("src"));
+        });
+    </script>
+
+</body>
+</html>
